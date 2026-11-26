@@ -4,6 +4,12 @@ All notable changes to `pushery/sovereign-ai-for-laravel` are documented here. T
 
 A release carries only the sections that have an entry, in this order: `### ⚠️ Breaking`, `### ✨ Added`, `### 🔧 Changed`, `### ⚡ Performance`, `### 🐛 Fixed`, `### 🔒 Security`, `### 🧹 Deprecated`, `### 🗑️ Removed` and `### 📚 Documentation`.
 
+## [0.1.1] - 2026-11-26
+
+### 📚 Documentation
+
+- **The requirements name the versions the package is tested on.** PHP 8.4.27, 8.5.x and 8.6.x, PostgreSQL 18.7 and MySQL 8.4.13, in the README and on the start page of the documentation.
+
 ## [0.1.0] - 2026-11-20
 
 ### ✨ Added
@@ -15,5 +21,6 @@ A release carries only the sections that have an entry, in this order: `### ⚠�
 - **The tokens of a streamed answer.** A stream carries the input and output tokens of its cloud once it has ended, because the package asks both clouds for them with `stream_options`, which `laravel/ai` sends to an OpenAI-compatible provider only where its configuration names them.
 - **A classification refused before it is sent.** Neither cloud offers one: IONOS serves no route for it, and OVHcloud serves the route for none of its models. A classification on `ionos` or `ovhcloud` ends in `UnsupportedCapability`, with a model as without one, and nothing is sent.
 
-[Unreleased]: https://github.com/pushery/sovereign-ai-for-laravel/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/pushery/sovereign-ai-for-laravel/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/pushery/sovereign-ai-for-laravel/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/pushery/sovereign-ai-for-laravel/releases/tag/v0.1.0
